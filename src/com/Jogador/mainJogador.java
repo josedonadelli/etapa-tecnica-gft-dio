@@ -7,16 +7,12 @@ import java.util.Date;
 
 public class mainJogador {
     public static void main(String[] args) throws ParseException {
-        long result;
-        String dob="02/27/2013";
-        //Date today = new Date();
-        Calendar hoje = Calendar.getInstance();
-        Date dobDate = new SimpleDateFormat("dd/mm/yyyy").parse(dob);
+       Jogador jogador = new Jogador();
 
+       jogador.setNome("Joao");
+       jogador.setPosicao("Ataque");
+       jogador.setDataNasc("05/10/1994");
 
-       // result = dobDate.compareTo(today);
-
-
-       // System.out.println("Resultado: " + result);
+        System.out.println(jogador.toString());
     }
 }
