@@ -93,7 +93,7 @@ public class Veiculos {
         if(qtd+this.litrosCombustivel<=60 && qtd>0){
             this.litrosCombustivel+=qtd;
         }else{
-            System.out.println("Valor inválido");
+            System.out.println("Qauntidade de combustível inválida");
         }
 
 
@@ -118,6 +118,19 @@ public class Veiculos {
             isLigado = false;
         }
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Veiculos{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", placa='" + placa + '\'' +
+                ", cor='" + cor + '\'' +
+                ", km='" + km + '\'' +
+                ", isLigado=" + isLigado +
+                ", litrosCombustivel=" + litrosCombustivel +
+                ", velocidade=" + velocidade +
+                ", preço=" + preço +
+                '}';
+    }
 }
